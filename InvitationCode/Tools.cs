@@ -20,12 +20,9 @@ namespace InvitationCode
             Random r = new Random(DateTime.Now.Millisecond);
             r.Next();
             Thread.Sleep(1);
-            while(true)
+            while(set.Count < s.Length)
             {
-                var c = s[r.Next(0, s.Length)];
-                set.Add(c);
-                if(set.Count == s.Length)
-                    break;
+                set.Add(s[r.Next(0, s.Length)]);
             }
             return new string(set.ToArray());
         }
