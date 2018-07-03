@@ -2,6 +2,9 @@
 
 namespace InvitationCode
 {
+    /// <summary>
+    /// 邀请码小工具。代码只是示意，对效率要求高的可进行优化，要求不高的可以直接使用。
+    /// </summary>
     public static class Invitation
     {
         /// <summary>
