@@ -20,7 +20,6 @@ namespace InvitationCode
             Random r = new Random(DateTime.Now.Millisecond);
             r.Next();
             Thread.Sleep(1);
-
             while(set.Count < s.Length)
             {
                 set.Add(s[r.Next(0, s.Length)]);
